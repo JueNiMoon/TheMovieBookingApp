@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_card_selected">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:text="@string/lbl_visa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvdot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_3x_22"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardName"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            tools:text="@string/lbl_4_stars"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:visibility="gone"
+            android:id="@+id/tvStar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardName"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:layout_toEndOf="@id/tvStar1"
+            android:text="@string/lbl_4_stars"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:visibility="gone"
+            android:id="@+id/tvStar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_4_stars"
+            android:textColor="@color/white"
+            android:layout_below="@id/tvCardName"
+            android:layout_toEndOf="@id/tvStar2"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvCardName"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_xxlarge"
+            android:text="8014"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStar1"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="CARD HOLDER"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_regular" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExpire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPIRE"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_below="@id/tvStar1"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/text_regular"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_large"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardHolder"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:text="Lily Johnson"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvExpireValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvCardHolder"
+            android:layout_marginEnd="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_card_medium"
+            android:text="08/23"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_2x"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

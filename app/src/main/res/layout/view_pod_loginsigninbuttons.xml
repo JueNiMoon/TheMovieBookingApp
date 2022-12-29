@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.themoviebookingapp.viewpod.LoginSignButtonViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/btnSigninWithFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_xxxlarge"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/background_sign_in">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="@dimen/margin_xlarge"
+            android:layout_height="@dimen/margin_xlarge"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:src="@mipmap/ic_facebook" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSigninWithFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_xxlarge"
+            android:layout_toEndOf="@id/ivFacebook"
+            android:text="@string/lbl_sign_in_with_facebook"
+            android:textSize="@dimen/text_regular_3x" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnSigninWithGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_xxxlarge"
+        android:background="@drawable/background_sign_in"
+        android:layout_marginTop="@dimen/margin_medium_2_18"
+        android:layout_below="@id/btnSigninWithFacebook">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="@dimen/margin_xlarge"
+            android:layout_height="@dimen/margin_xlarge"
+            android:src="@mipmap/ic_google"
+            android:layout_marginStart="@dimen/margin_xlarge"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSigninWithGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sign_in_with_google"
+            android:layout_toEndOf="@id/ivGoogle"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_xxxlarge"
+            android:textSize="@dimen/text_regular_3x"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_xxxlarge"
+        android:layout_below="@id/btnSigninWithGoogle"
+        android:layout_marginTop="@dimen/margin_medium_2_18"
+        android:background="@drawable/background_confirm"
+        android:text="@string/lbl_confirm"
+        android:textSize="@dimen/text_regular_3x"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</com.example.themoviebookingapp.viewpod.LoginSignButtonViewPod>

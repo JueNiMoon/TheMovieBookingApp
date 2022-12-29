@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_bar_code.xml" value="0.222" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_card.xml" value="0.2325" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_card_selected.xml" value="0.291" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_chip.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_circle.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_complete_booking.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_confirm.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_floating_btn.xml" value="0.195" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_get_started.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_minus_btn.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_minus_plus_btn.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_detail.xml" value="0.196" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_item_white.xml" value="0.2235" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_available.xml" value="0.2205" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_selected.xml" value="0.2235" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_seat_taken.xml" value="0.1595" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_movie_time_btn.xml" value="0.18" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_play_btn.xml" value="0.16" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_plus_btn.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_profile.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_quantity.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/background_sign_in.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/circle_available.xml" value="0.2235" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/circle_your_selection.xml" value="0.2235" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/gradiant_movie.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/gradiant_playbtn.xml" value="0.14" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/drawable/horizontal_separator_dashed_line.xml" value="0.2095" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_add_new_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_booking_seat.xml" value="0.3625" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_booking_ticket.xml" value="0.22" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_booking_ticket_complete.xml" value="0.33" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_detail.xml" value="0.25" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_payment.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/activity_snack.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.33" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/fragment_sign_in_buttons.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_available_in.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_available_in_item.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_booking_time.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_booking_time_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_card.xml" value="0.365625" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_cast.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_comboset.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_day.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_golden_city_item.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie_seat.xml" value="0.3625" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_movie_type.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_payment_method.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_testing.xml" value="0.18697916666666667" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_holder_west_point_item.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_availablein.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_cast.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_comming_soon.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_day_select.xml" value="0.27421875" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_loginsigninbuttons.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_movie_list.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_navigation.xml" value="0.18802083333333333" />
+        <entry key="..\:/AndroidAssignementProjects(PADC)/TheMovieBookingApp/app/src/main/res/layout/view_pod_now_showing.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

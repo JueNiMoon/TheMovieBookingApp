@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:collapsedTitleTextColor="@color/white"
+            app:expandedTitleTextColor="@android:color/transparent"
+            app:title="@string/lbl_movie_name"
+            android:layout_height="@dimen/height_collapsing_toolbar_movie_Details">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnBackToHome"
+                android:layout_width="@dimen/width_back_btn"
+                android:layout_height="@dimen/height_back_btn"
+                android:elevation="8dp"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:src="@drawable/ic_baseline_arrow_back_ios_white_24dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMoviePoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@mipmap/kamisama_kiss"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:id="@+id/btnPlayBtn"
+                android:layout_width="@dimen/width_play_btn"
+                android:layout_height="@dimen/height_play_btn"
+                android:background="@drawable/background_play_btn"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/width_play_btn_arrow"
+                    android:layout_height="@dimen/height_play_btn_arrow"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_play_arrow_white_24dp" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    android:layout_height="?attr/actionBarSize"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/background_movie_detail"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_top_movie_detail_info">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                tools:text="@string/lbl_movie_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShowTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/tvMovieName"
+                android:layout_below="@id/tvMovieName"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/lbl_movie_time"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <RatingBar
+                android:id="@+id/rbMovieRating"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMovieName"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_10"
+                android:layout_toEndOf="@id/tvShowTime"
+                android:numStars="5"
+                android:progressTint="@color/colorAccent"
+                android:rating="3.5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvShowTime"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/rbMovieRating"
+                android:text="IMDb 6.6"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMovieType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvShowTime"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:clipToPadding="false"
+                android:paddingEnd="@dimen/margin_medium_2" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPlotSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/tvMovieName"
+                android:layout_below="@id/rvMovieType"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="@string/lbl_plot_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_3x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPlotSummaryDetial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/tvMovieName"
+                android:layout_below="@id/tvPlotSummary"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="After her father having run away due to gambling debts, and being evicted from her apartment, Nanami meets Mikage, a starange man who is afraid of dogs. Nanami saves Mikage from a dog and tells him her story. He gives Nanami his house as a thank you for saving him." />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPlotSummaryDetial"
+                android:layout_alignStart="@id/tvMovieName"
+                android:text="@string/lbl_cast"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:textSize="@dimen/text_regular_3x"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCast">
+
+                <include
+                    android:id="@+id/view_pod_cast"
+                    layout="@layout/view_pod_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_2" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/margin_xxlarge">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGetYourTicket"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_get_your_ticket_btn"
+            android:background="@drawable/background_floating_btn"
+            android:text="@string/lbl_get_your_ticket"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+    </FrameLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium_2">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvComboSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo set M"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_large_28"
+        android:text="15$"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSetDescription"
+        android:layout_width="@dimen/width_combo_set_description"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvComboSet"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="Combo size M 220z. Coke (XL) and medium popcorn (XL)"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/margin_medium_x_13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvMinusBtn"
+        android:layout_width="@dimen/width_plus_qty_minus_btn"
+        android:layout_height="@dimen/height_plus_qty_minus_btn"
+        android:layout_below="@id/tvComboSet"
+        android:layout_marginTop="@dimen/margin_card_medium"
+        android:layout_toStartOf="@id/tvQtyBtn"
+        android:background="@drawable/background_minus_btn"
+        android:text="-" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvQtyBtn"
+        android:layout_width="@dimen/width_plus_qty_minus_btn"
+        android:layout_height="@dimen/height_plus_qty_minus_btn"
+        android:layout_alignTop="@id/tvMinusBtn"
+        android:layout_below="@id/tvComboSet"
+        android:layout_toStartOf="@id/tvPlusBtn"
+        android:background="@drawable/background_quantity"
+        android:text="0"
+        android:textColor="@android:color/darker_gray" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tvPlusBtn"
+        android:layout_width="@dimen/width_plus_qty_minus_btn"
+        android:layout_height="@dimen/height_plus_qty_minus_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tvMinusBtn"
+        android:layout_below="@id/tvComboSet"
+        android:background="@drawable/background_plus_btn"
+        android:text="+" />
+
+
+</RelativeLayout>

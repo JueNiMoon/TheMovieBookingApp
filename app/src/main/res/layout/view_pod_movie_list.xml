@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.themoviebookingapp.viewpod.MovieListViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNowShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_now_showing"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/margin_medium_3"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNowShowing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNowShowing"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/gradiant_movie"
+        android:clipToPadding="false"
+        android:paddingEnd="@dimen/margin_medium_2" />
+
+</com.example.themoviebookingapp.viewpod.MovieListViewPod>

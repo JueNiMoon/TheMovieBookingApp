@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWeekDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Wed"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/margin_medium_2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWeekDay"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:text="13"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/margin_medium_2" />
+
+</RelativeLayout>

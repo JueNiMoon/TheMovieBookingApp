@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddNewCardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:outlineSpotShadowColor="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBackToPayment"
+            android:layout_width="@dimen/width_back_btn"
+            android:layout_height="@dimen/height_back_btn"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/ic_baseline_arrow_back_ios_black_24dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_below="@id/appBar"
+            android:id="@+id/tvCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="@string/lbl_card_number"
+            android:textSize="@dimen/text_regular"
+            android:textColor="@android:color/darker_gray"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinpCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardNumber"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/txtinpCardNumber"
+        android:id="@+id/tvCardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/lbl_card_holder"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@android:color/darker_gray"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinpCardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardHolder"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputCardHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/txtinpCardHolder"
+        android:id="@+id/tvExpirationdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:text="@string/lbl_expiration_date"
+        android:textSize="@dimen/text_regular"
+        android:textColor="@android:color/darker_gray"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtinpCardHolder"
+        android:layout_marginStart="@dimen/marginStart_CVC"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_toEndOf="@id/tvExpirationdate"
+        android:text="@string/lbl_cvc"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_regular" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinpExpDate"
+        android:layout_width="@dimen/width_expiration_date_textbox"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvExpirationdate"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputExpDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="DD/MM"
+            android:inputType="date"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinpCVC"
+        android:layout_width="@dimen/width_CVC_textbox"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvExpirationdate"
+        android:layout_toEndOf="@id/txtinpExpDate"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_medium_2" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputCVC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddNewCard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_get_your_ticket_btn"
+        android:layout_below="@id/txtinpCVC"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/background_floating_btn"
+        android:text="@string/lbl_confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_2x" />
+
+</RelativeLayout>

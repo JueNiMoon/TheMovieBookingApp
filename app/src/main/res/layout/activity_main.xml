@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/colorPrimary">
+
+   <androidx.appcompat.widget.AppCompatImageView
+       android:id="@+id/ivWelcome"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/height_welcome_logo"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="80dp"
+       android:scaleType="centerCrop"
+       android:src="@mipmap/moviebookingapp_welcome" />
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvWelcome"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_welcome"
+       android:layout_below="@id/ivWelcome"
+       android:layout_centerHorizontal="true"
+       android:textColor="@color/white"
+       android:layout_marginTop="@dimen/margin_xxxxlarge"
+       android:textStyle="bold"
+       android:textSize="@dimen/margin_large"/>
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/tvHello"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/lbl_hello"
+       android:layout_below="@id/tvWelcome"
+       android:layout_centerHorizontal="true"
+       android:textColor="@color/white"
+       android:layout_marginTop="@dimen/margin_medium"/>
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/btnGetStarted"
+       android:layout_width="@dimen/width_get_started_btn"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="@dimen/margin_large"
+       android:background="@drawable/background_get_started"
+       android:text="@string/lbl_get_started"
+       android:textSize="@dimen/text_regular_2x_18"
+       android:textAllCaps="false"
+       android:textColor="@color/white" />
+
+
+
+</RelativeLayout>

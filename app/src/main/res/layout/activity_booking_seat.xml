@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookingSeatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:outlineSpotShadowColor="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnBackToPayment"
+            android:layout_width="@dimen/width_back_btn"
+            android:layout_height="@dimen/height_back_btn"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/ic_baseline_arrow_back_ios_black_24dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lbl_movie_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_large"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCinemaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMovieName"
+                android:layout_marginTop="@dimen/margin_small"
+                tools:text="Galaxy Cinema - Golden City"
+                android:textAlignment="center" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCinemaName"
+                android:layout_marginTop="@dimen/margin_small"
+                tools:text="Wednesday, 10 May, 07:00 PM"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_green_separator"
+                android:src="@mipmap/green_curve"
+                android:layout_below="@id/tvTime"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSeatSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivSeparator"
+                android:layout_marginEnd="@dimen/margin_card_medium"
+                android:layout_marginStart="@dimen/margin_card_medium"
+                android:layout_marginTop="@dimen/margin_medium_2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAvaible"
+                android:layout_width="@dimen/width_ticke_buy_circle"
+                android:layout_height="@dimen/height_ticket_buy_circle"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:background="@drawable/circle_available" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAvaibale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_toEndOf="@id/ivAvaible"
+                android:text="@string/lbl_available" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivReserved"
+                android:layout_width="@dimen/width_ticke_buy_circle"
+                android:layout_height="@dimen/height_ticket_buy_circle"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_toEndOf="@id/tvAvaibale"
+                android:background="@drawable/circle_reserved" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReserved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_toEndOf="@id/ivReserved"
+                android:text="@string/lbl_reserved" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivYourSelection"
+                android:layout_width="@dimen/width_ticke_buy_circle"
+                android:layout_height="@dimen/height_ticket_buy_circle"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_toEndOf="@id/tvReserved"
+                android:background="@drawable/circle_your_selection" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvYourSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rvSeatSetting"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_toEndOf="@id/ivYourSelection"
+                android:text="@string/lbl_your_selection" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDotLine"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/horizontal_separator_dashed_line"
+                android:layout_below="@id/ivAvaible"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginEnd="@dimen/margin_medium_3"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivDotLine"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:text="@string/lbl_ticket" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTicketValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/ivDotLine"
+                android:layout_marginEnd="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                tools:text="2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTicket"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/label_seats"
+                android:layout_marginBottom="500px"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSeatValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tvTicket"
+                android:layout_marginBottom="500px"
+                android:layout_marginEnd="@dimen/margin_medium_3"
+                android:layout_marginTop="@dimen/margin_medium"
+                tools:text="D Row/5,6" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin_medium_2"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBuyTicket"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_get_your_ticket_btn"
+            android:background="@drawable/background_floating_btn"
+            android:layout_gravity="bottom"
+            tools:text="Buy Ticket for $20.00"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_regular_2x"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginEnd="@dimen/margin_medium_2"
+            android:layout_marginBottom="@dimen/margin_medium_2"/>
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

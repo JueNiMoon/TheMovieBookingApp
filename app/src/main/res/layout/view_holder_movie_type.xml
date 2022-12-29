@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_movie_type_chip"
+    android:layout_height="@dimen/height_movie_type_chip"
+    android:background="@drawable/background_chip"
+    android:layout_marginStart="@dimen/margin_medium">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMovieType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Mystery" />
+
+</RelativeLayout>
